@@ -2,29 +2,29 @@
 body {
   font-family: "Open Sans", sans-serif; }
 
-.navbar-default {
+.navbar.navbar-default {
   background-color: white;
   border: none;
   margin: 0; }
-  .navbar-default .navbar-toggle {
+  .navbar.navbar-default .navbar-toggle {
     background-color: #418BCC;
     padding: 4px;
     line-height: 20px;
     margin-right: 5em; }
-    .navbar-default .navbar-toggle span.icon-bar {
+    .navbar.navbar-default .navbar-toggle span.icon-bar {
       background-color: white;
       height: 4px;
       width: 30px;
       border-radius: 7px;
       margin: 5px 0; }
-  .navbar-default .login-button {
+  .navbar.navbar-default .login-button {
     margin-top: 7px; }
-  .navbar-default .navbar-brand {
+  .navbar.navbar-default .navbar-brand {
     font-size: 28px;
     font-weight: 700; }
-    .navbar-default .navbar-brand span.snap {
+    .navbar.navbar-default .navbar-brand span.snap {
       color: #508ABC; }
-    .navbar-default .navbar-brand span.grid {
+    .navbar.navbar-default .navbar-brand span.grid {
       color: #6F7376; }
 
 .jumbotron, .jumbotron > .container {
@@ -50,6 +50,8 @@ div.container.below-snap {
   color: #929699; }
   div.container.below-snap > h3 {
     font-weight: 700; }
+    div.container.below-snap > h3 span {
+      font-size: 26px; }
   div.container.below-snap > p {
     line-height: 24px;
     margin: 25px 0; }
@@ -72,10 +74,34 @@ div.container.below-snap {
     margin: 0;
     padding: 0;
     background-color: white; }
-    div.container.below-snap div.container.images div.row .col-sm-6 img {
+    div.container.below-snap div.container.images div.row .col-xs-6 img {
       height: 100%;
       width: 100%;
       background-size: contain; }
-    div.container.below-snap div.container.images div.row .col-sm-6 span {
+    div.container.below-snap div.container.images div.row .col-xs-6 span {
       display: block;
       margin: 3px 0 10px 0; }
+  div.container.below-snap div.container.bike {
+    padding: 0;
+    background-color: white; }
+    div.container.below-snap div.container.bike img {
+      background-size: contain;
+      height: 100%;
+      width: 100%; }
+
+footer.navbar-default {
+  background-color: #3A414A;
+  color: #929699;
+  padding: 20px 30px 30px 30px; }
+  footer.navbar-default h3 {
+    font-weight: 700; }
+  footer.navbar-default p {
+    margin-bottom: 50px;
+    line-height: 24px; }
+  footer.navbar-default span {
+    display: block;
+    line-height: 24px; }
+  footer.navbar-default span.about-us {
+    text-decoration: underline; }
+  footer.navbar-default span.about-us:last-child {
+    margin-bottom: 50px; }

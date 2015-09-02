@@ -7,7 +7,7 @@ $bootstrapBlue: #418BCC;
 body{
 font-family: $regularFont
 }
-.navbar-default{
+.navbar.navbar-default{
   background-color: white;
   border: none;
   margin: 0;
@@ -68,6 +68,9 @@ div.container.below-snap{
   color: $textGray;
   > h3{
     font-weight: $boldFont;
+    span{
+      font-size: 26px;
+    }
   }
   > p {
     line-height: 24px;
@@ -98,7 +101,7 @@ div.container.below-snap{
     padding: 0;
     background-color: white;
      div.row{
-      .col-sm-6{
+      .col-xs-6{
         img{
           height: 100%;
           width: 100%;
@@ -111,6 +114,38 @@ div.container.below-snap{
       }
     }
   }
+
+  div.container.bike{
+    padding: 0;
+    background-color: white;
+    img{
+      background-size: contain;
+      height: 100%;
+      width: 100%;
+    }
+  }
 }
 
+footer.navbar-default{
+  background-color: #3A414A;
+  color: $textGray;
+  padding: 20px 30px 30px 30px;
+  h3{
+    font-weight: $boldFont;
+  }
+  p{
+    margin-bottom: 50px;
+    line-height: 24px;
+  }
+  span{
+    display: block;
+    line-height: 24px;
+  }
+  span.about-us{
+  text-decoration: underline;
+  }
+  span.about-us:last-child{
+    margin-bottom: 50px;
+  }
+}
 
