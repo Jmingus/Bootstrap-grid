@@ -48,9 +48,9 @@ body {
 
 div.container.below-snap {
   color: #929699; }
-  div.container.below-snap > h3 {
+  div.container.below-snap .row h3 {
     font-weight: 700; }
-    div.container.below-snap > h3 span {
+    div.container.below-snap .row h3 span {
       font-size: 26px; }
   div.container.below-snap > p {
     line-height: 24px;
@@ -105,3 +105,16 @@ footer.navbar-default {
     text-decoration: underline; }
   footer.navbar-default span.about-us:last-child {
     margin-bottom: 50px; }
+
+@media screen and (min-width: 767px) {
+  .container.below-snap .row .col-sm-4 button {
+    width: 100%;
+    margin-top: 20px; }
+  .container.below-snap .row.boxes-above-images {
+    margin: 0; }
+    .container.below-snap .row.boxes-above-images > .container {
+      border: 10px solid white; }
+    .container.below-snap .row.boxes-above-images > .container:first-child {
+      border-left: none; }
+    .container.below-snap .row.boxes-above-images > .container:last-child {
+      border-right: none; } }
