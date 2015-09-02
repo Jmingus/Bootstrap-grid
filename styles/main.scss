@@ -1,1 +1,116 @@
-@import '..node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+$regularFont: 'Open Sans', sans-serif;
+$boldFont: 700;
+$textGray: #929699;
+$bootstrapBlue: #418BCC;
+
+body{
+font-family: $regularFont
+}
+.navbar-default{
+  background-color: white;
+  border: none;
+  margin: 0;
+  .navbar-toggle{
+    background-color: #418BCC;
+    padding: 4px;
+    line-height: 20px;
+    margin-right: 5em;
+    span.icon-bar{
+      background-color: white;
+      height: 4px;
+      width: 30px;
+      border-radius: 7px;
+      margin: 5px 0;
+    }
+  }
+  .login-button{
+    margin-top: 7px;
+  }
+
+  .navbar-brand{
+    font-size: 28px;
+    font-weight: $boldFont;
+    span.snap{
+      color: #508ABC;
+    }
+    span.grid{
+      color: #6F7376;
+    }
+  }
+}
+
+.jumbotron{
+  background-image: url('../images/hero-image.jpg');
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  > .container{
+    @extend .jumbotron;
+    width: 100%;
+    text-align: center;
+    background-image: none;
+    padding: 80px 0;
+    background-color: RGBA(0,0,0,0.35);
+    > h1{
+      color: white;
+      font-size: 44px;
+    }
+    > h4{
+      color: white;
+      line-height: 24px;
+      margin-top: 12px;
+    }
+  }
+}
+
+div.container.below-snap{
+  color: $textGray;
+  > h3{
+    font-weight: $boldFont;
+  }
+  > p {
+    line-height: 24px;
+    margin: 25px 0;
+  }
+  > button{
+    width: 270px;
+  }
+  hr{
+  background-color: #BEBEBE;
+  height: 1px;
+  }
+  div.container{
+  background-color: #F0F0F0;
+  margin-bottom: 20px;
+  color: $textGray;
+  border-radius: 4px;
+  padding: 20px 15px;
+  > h4{
+    font-weight: $boldFont;
+    }
+  > p{
+    line-height: 24px;
+    }
+  }
+  div.container.images{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+     div.row{
+      .col-sm-6{
+        img{
+          height: 100%;
+          width: 100%;
+          background-size: contain;
+        }
+        span{
+          display: block;
+          margin: 3px 0 10px 0;
+        }
+      }
+    }
+  }
+}
+
+
