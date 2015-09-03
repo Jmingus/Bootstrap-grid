@@ -52,14 +52,18 @@ font-family: $regularFont
     background-image: none;
     padding: 80px 0;
     background-color: RGBA(0,0,0,0.35);
-    > h1{
-      color: white;
-      font-size: 44px;
+    .col-sm-3 {
+      > h1 {
+        color: white;
+        font-size: 44px;
+      }
     }
-    > h4{
-      color: white;
-      line-height: 24px;
-      margin-top: 12px;
+    .col-sm-7 {
+      > h4 {
+        color: white;
+        line-height: 12px;
+        margin-top: 12px;
+      }
     }
   }
 }
@@ -68,7 +72,7 @@ div.container.below-snap {
   color: $textGray;
   margin: 0 15px;
   .row.top-text {
-    .col-sm-8,
+    .col-sm-7,
     .col-sm-4{
       padding: 0;
       h3 {
@@ -123,7 +127,7 @@ div.container.below-snap {
       }
     }
     div.row {
-      div.col-sm-8 {
+      div.col-sm-7 {
         h3 {
           font-weight: $boldFont;
           span {
@@ -174,6 +178,19 @@ footer.navbar-default{
 }
 
 @media screen and (min-width: 768px){
+  .jumbotron{
+    .container{
+      .col-sm-3{
+        h1{
+          line-height: 12px;
+        }
+      }
+      .col-sm-7{
+        line-height: 12px;
+        text-align: left;
+      }
+    }
+  }
   div.container.below-snap{
     margin: 0 auto;
     .row.top-text{
@@ -184,6 +201,9 @@ footer.navbar-default{
           margin-top: 20px;
         }
       }
+    }
+    .row.divider{
+      padding: 0 15px;
     }
     .row.boxes-above-images{
       margin: 0;
@@ -199,6 +219,25 @@ footer.navbar-default{
       }
       > .container.col-sm-4.right{
         border-right: none;
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px ){
+  .jumbotron{
+    .container{
+      div.col-sm-3{
+        h1{
+          line-height: 24px;
+          font-size: 56px;
+        }
+      }
+      div.col-sm-7{
+        h4 {
+          text-align: left;
+          font-size: 26px;
+          line-height: 17px;
+        }
       }
     }
   }
