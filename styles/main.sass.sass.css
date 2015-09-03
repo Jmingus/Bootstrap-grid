@@ -119,14 +119,19 @@ footer.navbar-default {
     margin-bottom: 50px; }
 
 @media screen and (min-width: 768px) {
-  .container.below-snap .row .col-sm-4 button {
-    width: 100%;
-    margin-top: 20px; }
-  .container.below-snap .row.boxes-above-images {
-    margin: 0; }
-    .container.below-snap .row.boxes-above-images > .container {
-      border: 10px solid white; }
-    .container.below-snap .row.boxes-above-images > .container:first-child {
-      border-left: none; }
-    .container.below-snap .row.boxes-above-images > .container:last-child {
-      border-right: none; } }
+  div.container.below-snap {
+    margin: 0 auto; }
+    div.container.below-snap .row.top-text {
+      padding: 0 15px; }
+      div.container.below-snap .row.top-text .col-sm-4 button {
+        width: 100%;
+        margin-top: 20px; }
+    div.container.below-snap .row.boxes-above-images {
+      margin: 0; }
+      div.container.below-snap .row.boxes-above-images > .container {
+        border: 10px solid white;
+        padding: 0; }
+      div.container.below-snap .row.boxes-above-images > .container.col-sm-4.left {
+        border-left: none; }
+      div.container.below-snap .row.boxes-above-images > .container.col-sm-4.right {
+        border-right: none; } }

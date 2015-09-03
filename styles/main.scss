@@ -174,8 +174,10 @@ footer.navbar-default{
 }
 
 @media screen and (min-width: 768px){
-  .container.below-snap{
-    .row{
+  div.container.below-snap{
+    margin: 0 auto;
+    .row.top-text{
+      padding: 0 15px;
       .col-sm-4{
         button{
           width: 100%;
@@ -187,11 +189,15 @@ footer.navbar-default{
       margin: 0;
       > .container{
         border: 10px solid white;
+        padding: 0;
       }
-      > .container:first-child{
+      > .container.col-sm-4.left{
         border-left: none;
       }
-      > .container:last-child{
+      > .container.col-sm-4.mid{
+
+      }
+      > .container.col-sm-4.right{
         border-right: none;
       }
     }
