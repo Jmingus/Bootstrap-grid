@@ -64,94 +64,116 @@ font-family: $regularFont
   }
 }
 
-div.container.below-snap{
+div.container.below-snap {
   color: $textGray;
-    .row {
-      h3{
-      font-weight: $boldFont;
-        span{
+  margin: 0 15px;
+  .row.top-text {
+    .col-sm-8,
+    .col-sm-4{
+      padding: 0;
+      h3 {
+        font-weight: $boldFont;
+        span {
           font-size: 26px;
         }
       }
     }
+  }
   > p {
     line-height: 24px;
     margin: 25px 0;
   }
-  > button{
+  > button {
     width: 270px;
   }
-  hr{
-  background-color: #BEBEBE;
-  height: 1px;
+  hr {
+    background-color: #BEBEBE;
+    height: 1px;
+    width: 100%;
   }
-  div.container{
-  background-color: #F0F0F0;
-  margin-bottom: 20px;
-  color: $textGray;
-  border-radius: 4px;
-  padding: 20px 15px;
-  > h4{
-    font-weight: $boldFont;
+  div.row.boxes-above-images {
+    div.container {
+      background-color: #F0F0F0;
+      margin-bottom: 20px;
+      color: $textGray;
+      border-radius: 4px;
+      padding: 20px 15px;
+      > h4 {
+        font-weight: $boldFont;
+      }
+      > p {
+        line-height: 24px;
+      }
+      > hr {
+        margin: 0 20px;
+      }
     }
-  > p{
-    line-height: 24px;
-    }
-  }
-  div.container.images{
-    margin: 0;
-    padding: 0;
-    background-color: white;
-     div.row{
-      .col-xs-6{
-        img{
+    div.row {
+      .col-sm-3,
+      .col-xs-6 {
+        img {
           height: 100%;
           width: 100%;
           background-size: contain;
         }
-        span{
+        span {
           display: block;
-          margin: 3px 0 10px 0;
+          margin: 3px 0 10px 20px;
+        }
+      }
+    }
+    div.row {
+      div.col-sm-8 {
+        h3 {
+          font-weight: $boldFont;
+          span {
+            font-size: 26px;
+          }
+        }
+      }
+      div.col-sm-4 {
+        div.container.bike {
+          width: 100%;
+          padding: 0;
+          background-color: white;
+          img {
+            background-size: contain;
+            height: 100%;
+            width: 100%;
+          }
         }
       }
     }
   }
-
-  div.container.bike{
-    padding: 0;
-    background-color: white;
-    img{
-      background-size: contain;
-      height: 100%;
-      width: 100%;
-    }
-  }
 }
-
 footer.navbar-default{
   background-color: #3A414A;
   color: $textGray;
   padding: 20px 30px 30px 30px;
-  h3{
-    font-weight: $boldFont;
-  }
-  p{
-    margin-bottom: 50px;
-    line-height: 24px;
-  }
-  span{
-    display: block;
-    line-height: 24px;
-  }
-  span.about-us{
-  text-decoration: underline;
-  }
-  span.about-us:last-child{
-    margin-bottom: 50px;
+
+  .row{
+
+    h3{
+      font-weight: $boldFont;
+    }
+    p{
+      margin-bottom: 50px;
+      line-height: 24px;
+    }
+    span{
+      display: block;
+      line-height: 24px;
+    }
+    span.about-us{
+    text-decoration: underline;
+    }
+    span.about-us:last-child{
+      margin-bottom: 50px;
+    }
   }
 }
 
-@media screen and (min-width: 767px){
+@media screen and (min-width: 768px){
   .container.below-snap{
     .row{
       .col-sm-4{

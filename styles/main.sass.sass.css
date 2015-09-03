@@ -47,11 +47,17 @@ body {
       margin-top: 12px; }
 
 div.container.below-snap {
-  color: #929699; }
-  div.container.below-snap .row h3 {
-    font-weight: 700; }
-    div.container.below-snap .row h3 span {
-      font-size: 26px; }
+  color: #929699;
+  margin: 0 15px; }
+  div.container.below-snap .row.top-text .col-sm-8,
+  div.container.below-snap .row.top-text .col-sm-4 {
+    padding: 0; }
+    div.container.below-snap .row.top-text .col-sm-8 h3,
+    div.container.below-snap .row.top-text .col-sm-4 h3 {
+      font-weight: 700; }
+      div.container.below-snap .row.top-text .col-sm-8 h3 span,
+      div.container.below-snap .row.top-text .col-sm-4 h3 span {
+        font-size: 26px; }
   div.container.below-snap > p {
     line-height: 24px;
     margin: 25px 0; }
@@ -59,32 +65,38 @@ div.container.below-snap {
     width: 270px; }
   div.container.below-snap hr {
     background-color: #BEBEBE;
-    height: 1px; }
-  div.container.below-snap div.container {
+    height: 1px;
+    width: 100%; }
+  div.container.below-snap div.row.boxes-above-images div.container {
     background-color: #F0F0F0;
     margin-bottom: 20px;
     color: #929699;
     border-radius: 4px;
     padding: 20px 15px; }
-    div.container.below-snap div.container > h4 {
+    div.container.below-snap div.row.boxes-above-images div.container > h4 {
       font-weight: 700; }
-    div.container.below-snap div.container > p {
+    div.container.below-snap div.row.boxes-above-images div.container > p {
       line-height: 24px; }
-  div.container.below-snap div.container.images {
-    margin: 0;
+    div.container.below-snap div.row.boxes-above-images div.container > hr {
+      margin: 0 20px; }
+  div.container.below-snap div.row.boxes-above-images div.row .col-sm-3 img,
+  div.container.below-snap div.row.boxes-above-images div.row .col-xs-6 img {
+    height: 100%;
+    width: 100%;
+    background-size: contain; }
+  div.container.below-snap div.row.boxes-above-images div.row .col-sm-3 span,
+  div.container.below-snap div.row.boxes-above-images div.row .col-xs-6 span {
+    display: block;
+    margin: 3px 0 10px 20px; }
+  div.container.below-snap div.row.boxes-above-images div.row div.col-sm-8 h3 {
+    font-weight: 700; }
+    div.container.below-snap div.row.boxes-above-images div.row div.col-sm-8 h3 span {
+      font-size: 26px; }
+  div.container.below-snap div.row.boxes-above-images div.row div.col-sm-4 div.container.bike {
+    width: 100%;
     padding: 0;
     background-color: white; }
-    div.container.below-snap div.container.images div.row .col-xs-6 img {
-      height: 100%;
-      width: 100%;
-      background-size: contain; }
-    div.container.below-snap div.container.images div.row .col-xs-6 span {
-      display: block;
-      margin: 3px 0 10px 0; }
-  div.container.below-snap div.container.bike {
-    padding: 0;
-    background-color: white; }
-    div.container.below-snap div.container.bike img {
+    div.container.below-snap div.row.boxes-above-images div.row div.col-sm-4 div.container.bike img {
       background-size: contain;
       height: 100%;
       width: 100%; }
@@ -93,20 +105,20 @@ footer.navbar-default {
   background-color: #3A414A;
   color: #929699;
   padding: 20px 30px 30px 30px; }
-  footer.navbar-default h3 {
+  footer.navbar-default .row h3 {
     font-weight: 700; }
-  footer.navbar-default p {
+  footer.navbar-default .row p {
     margin-bottom: 50px;
     line-height: 24px; }
-  footer.navbar-default span {
+  footer.navbar-default .row span {
     display: block;
     line-height: 24px; }
-  footer.navbar-default span.about-us {
+  footer.navbar-default .row span.about-us {
     text-decoration: underline; }
-  footer.navbar-default span.about-us:last-child {
+  footer.navbar-default .row span.about-us:last-child {
     margin-bottom: 50px; }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .container.below-snap .row .col-sm-4 button {
     width: 100%;
     margin-top: 20px; }
