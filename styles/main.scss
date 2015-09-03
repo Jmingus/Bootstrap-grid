@@ -24,8 +24,14 @@ font-family: $regularFont
       margin: 5px 0;
     }
   }
+  ul{
+    li{
+      margin-right: 40px;
+    }
+  }
   .login-button{
     margin-top: 7px;
+    width: 85px;
   }
 
   .navbar-brand{
@@ -237,6 +243,33 @@ footer.navbar-default{
           text-align: left;
           font-size: 26px;
           line-height: 17px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .jumbotron{
+    div.container{
+      div.col-lg-12{
+        h4{
+          text-align: center;
+        }
+        h4:first-child{
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+  .container.below-snap{
+    div.row.top-text{
+      div.col-lg-10{
+        h3{
+          font-size: 32px;
+        }
+        p{
+          font-size: 18px;
         }
       }
     }
